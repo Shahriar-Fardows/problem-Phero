@@ -380,7 +380,7 @@
 
 
 // function matchFinder(firstString, secondString) {
-//     // Check if the input strings are valid (not empty and not null)
+//     
 //     if (typeof firstString === 'string' && typeof secondString === 'string' ) {
        
 //         return true;
@@ -396,11 +396,7 @@
 //     // }
 //   }
   
-//   // Example usage:
-//   console.log(matchFinder("Hello, world!", 264)); // Output: true (Complete match found)
-// //   console.log(matchFinder("Hello, world!", "universe")); // Output: false (No complete match found)
-// //   console.log(matchFinder("Double", "any")); // Output: Input strings are not valid.
-  
+//  
 
 // function matchFinder(input) {
 //     if (typeof input !== 'string' || input.includes('double') || input.includes('any')) {
@@ -417,41 +413,3 @@
 // const match = matchFinder('yourFirstString')
 // console.log(match);
 
-
-// function findAddress(addressObject) {
-//     // Check if any property is missing
-//     if (!addressObject.street || !addressObject.city || !addressObject.zipCode) {
-//       // Bonus: Replace missing properties with double underscores
-//       const formattedAddress = {
-//         street: addressObject.street || '__',
-//         city: addressObject.city || '__',
-//         zipCode: addressObject.zipCode || '__',
-//       };
-//       return `${formattedAddress.street}, ${formattedAddress.city}, ${formattedAddress.zipCode}`;
-//     } else {
-//       // Format the address with provided properties
-//       return `${addressObject.street}, ${addressObject.city}, ${addressObject.zipCode}`;
-//     }
-//   }
-  
-//   // Example usage:
-//   const address1 = {street:10, house:'15A', society:'Earth Perfect'} ;
-//   const output = findAddress(address1);
-//   console.log(output); // Output: "123 Main St, Exampleville, 12345"
-  
-//   const address2 = { street: '456 Elm St', zipCode: '67890' };
-//   console.log(findAddress(address2)); // Output: "456 Elm St, __, 67890" (with missing city)
-  
-//   const address3 = { city: 'Sample City' };
-//   console.log(findAddress(address3)); // Output: "__, Sample City, __" (with missing street and zipCode)
-  
-
-
-
-
-
-
-
-
-
-  
