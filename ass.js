@@ -76,7 +76,7 @@ console.log(output);
 
 function canPay(changeArray, totalDue) {
     if (changeArray.length === 0) {
-        return true;
+        return "Minimum purchase required";
     }
 
     const totalChange = changeArray.reduce((acc, note) => acc + note, 0);

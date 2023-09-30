@@ -299,11 +299,30 @@
 // console.log(ansName);
 
 
+// const num1 = [ 'najmul', 'shihab', 'anamul', 'alif'];
+
+// function unicname (num){
+//     let bestFriendName = num1[0]; 
+//     for (let i = 1; i < num1.length; i++) {
+       
+//         if (num1[i].length > bestFriendName.length) {
+//             bestFriendName = num1[i]; 
+//         }
+//     }
+
+//     return bestFriendName; 
+
+// }
+
+// const answerName = unicname(num1);
+// console.log(answerName);
 
 
-// for (let i = 0; i<= 50; i++){
+
+
+// for (let i = 0; i<= 10; i++){
 //     if (i )
-//     console.log(i , 'Eva apu ' );
+//     console.log(i , "apni ki ak bar msg  diya shoshur bari jan naki 🫡 " );
 // }
 
 
@@ -413,3 +432,57 @@
 // const match = matchFinder('yourFirstString')
 // console.log(match);
 
+
+
+
+
+
+
+
+
+
+
+function calculateAge(birthDate) {
+    const currentDate = new Date();
+    const birthYear = birthDate.getFullYear();
+    const birthMonth = birthDate.getMonth();
+    const birthDay = birthDate.getDate();
+    const currentYear = currentDate.getFullYear();
+    const currentMonth = currentDate.getMonth();
+    const currentDay = currentDate.getDate();
+  
+    let years = currentYear - birthYear;
+    let months = currentMonth - birthMonth;
+    let days = currentDay - birthDay;
+  
+    if (days < 0) {
+      months--;
+      days += new Date(currentYear, currentMonth, 0).getDate();
+    }
+  
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+  
+    const weeks = Math.floor(days / 7);
+    const hours = Math.floor((currentDate - birthDate) / 3600000);
+    const minutes = Math.floor((currentDate - birthDate) / 60000);
+    const seconds = Math.floor((currentDate - birthDate) / 1000);
+  
+    return {
+      years: years + " years",
+      months: months + " months",
+      weeks: weeks + " weeks",
+      days: days + " days",
+      hours: hours + " hours",
+      minutes: minutes + " minutes",
+      seconds: seconds + " seconds"
+    };
+  }
+  
+  // Example usage:
+  const birthDate = new Date("1998-05-15"); // Replace with your birthdate
+  const age = calculateAge(birthDate);
+  console.log(age);
+  
